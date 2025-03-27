@@ -2,10 +2,6 @@
 # **📜 GDD - [NOME DO JOGO] (Em Planejamento 🚧)**  
 *Um jogo de sobrevivência em pixel art 2D, single-player, desenvolvido colaborativamente na Godot Engine 4.x*  
 
-![Banner do Jogo (Imagem conceitual de pixel art: personagem em uma ilha deserta com recursos espalhados e criaturas hostis ao fundo)]  
-
----  
-
 ## **📌 Visão Geral**  
 **🎮 Gênero:** Survival, Ação, Aventura  
 **🎯 Público-Alvo:** Fãs de jogos de sobrevivência, pixel art e desafios estratégicos.  
