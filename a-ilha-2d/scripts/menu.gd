@@ -10,6 +10,6 @@ func _on_button_pressed(button: Button) -> void:
 		"jogar":
 			var _game: bool = get_tree().change_scene_to_file("res://scenes/main.tscn")  # Godot 4 usa change_scene_to_file()
 		"continue":
-			print("Continuar jogo")
+			print("Continuar jogo")# Ainda n
 		"sair":
-			get_tree().quit()
+			get_tree().quit()# Sai do jogo
