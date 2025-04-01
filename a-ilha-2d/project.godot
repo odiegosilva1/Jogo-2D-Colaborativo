@@ -11,5 +11,10 @@ config_version=5
 [application]
 
 config/name="A-Ilha-2D"
+run/main_scene="uid://c2uo7cufnv88u"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
+
+[global_group]
+
+button=""
