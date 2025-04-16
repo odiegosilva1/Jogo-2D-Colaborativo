@@ -15,6 +15,12 @@ run/main_scene="uid://c2uo7cufnv88u"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
 
+[file_customization]
+
+folder_colors={
+"res://assets/": "orange"
+}
+
 [global_group]
 
 button=""
