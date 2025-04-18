@@ -1,8 +1,48 @@
-[gd_scene format=3 uid="uid://cxnjrrndkrlu3"]
+[gd_scene load_steps=7 format=3 uid="uid://cxnjrrndkrlu3"]
 
-[node name="main" type="Node2D"]
+[ext_resource type="Script" uid="uid://courhvmt2xuje" path="res://scripts/player.gd" id="1_0wfyh"]
+[ext_resource type="Texture2D" uid="uid://c6a6iu8ywhv4a" path="res://assets/player.png" id="1_o5qli"]
 
-[node name="ColorRect" type="ColorRect" parent="."]
-offset_right = 1151.0
-offset_bottom = 642.0
-color = Color(1, 0.454902, 1, 1)
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_0wfyh"]
+radius = 6.0
+height = 18.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sugp2"]
+atlas = ExtResource("1_o5qli")
+region = Rect2(0, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jyhfs"]
+atlas = ExtResource("1_o5qli")
+region = Rect2(16, 16, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_tbgi4"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sugp2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jyhfs")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}]
+
+[node name="World-1" type="Node2D"]
+
+[node name="player" type="CharacterBody2D" parent="."]
+position = Vector2(287, 178)
+script = ExtResource("1_0wfyh")
+
+[node name="Collision" type="CollisionShape2D" parent="player"]
+position = Vector2(-9, -7)
+shape = SubResource("CapsuleShape2D_0wfyh")
+
+[node name="animation" type="AnimatedSprite2D" parent="player"]
+position = Vector2(-9, -7)
+sprite_frames = SubResource("SpriteFrames_tbgi4")
+animation = &"Idle"
+autoplay = "Idle"
+frame_progress = 0.165844
+speed_scale = 0.1
