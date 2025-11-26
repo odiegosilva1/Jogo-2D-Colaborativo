@@ -1,0 +1,93 @@
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Ww][Ii][Nn]32/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Oo]ut/
+msbuild.log
+msbuild.err
+msbuild.wrn
+
+# Visual Studio
+.vs/
+.vscode/
+*.user
+*.userosscache
+*.sln.iml
+
+# MonoGame
+Content/bin/
+Content/obj/
+
+# NuGet
+[Nu]Get/
+*.nupkg
+.nuget/
+packages/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+*.log*
+
+# Runtime
+*.dll
+*.exe
+*.so
+*.dylib
+
+# Content Pipeline
+Content/Intermediate/
+
+# Mac
+._*
+
+# Windows
+[Tt]humbs.db
+$RECYCLE.BIN/
+
+# Linux
+*~
+
+# Rider
+.idea/
+*.sln.iml
+
+# Visual Studio Code
+.history/
+
+# MonoGame Content Builder
+bin/
+obj/
+
+# Exceptions - Keep these
+!Content/bin/DesktopGL/**/*.xnb
+!Content/obj/.gitkeep
+
+# Keep Content source files but ignore built files
+Content/bin/
+Content/obj/
+!Content/**/*.png
+!Content/**/*.jpg
+!Content/**/*.wav
+!Content/**/*.mp3
+!Content/**/*.ogg
+!Content/**/*.spritefont
+!Content/**/*.fx
+!Content/**/*.xml
